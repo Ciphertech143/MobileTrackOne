@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/setting_profile_image"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="140dp"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/hng"  />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/setting_profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="161dp"
+        android:gravity="center"
+        android:text="@string/profile_name" />
+
+    <Button
+        android:id="@+id/btn_git"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+        android:layout_marginTop="200dp"
+        android:text="@string/open_github"
+/>
+
+</RelativeLayout>
